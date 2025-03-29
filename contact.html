@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW2 LAB7</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+            nav {
+                background-color: #333;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 20px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                padding: 20px;
+            }
+            div.gallery {
+                margin: 5px;
+                border: 3px solid black;
+                float: left;
+                width: 180px;
+            }
+            div.gallery:hover {
+            border: 5px solid black;
+            border-radius: 10px;
+            }
+            div.gallery img {
+            width: 100%;
+            height: auto;
+            }
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h2>My Cats</h2>
+            </div>
+            <div class="menu">
+                <a href="index.html" target="_self">Home</a>
+                <a href="about.html" target="_self">About</a>
+                <a href="info.html" target="_self">Info</a>
+                <a href="contact.html" target="_self">Contact</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div>
+                <h1>Contact Us</h1>
+                <form action="q2.html" method="post">
+                    <lable for="name">Name : </lable>   
+                    <input type="text" id="name" name="name"><br><br>
+                    <lable for="email">E-mail : </lable>  
+                    <input type="email" id="email" name="email"><br><br>
+                    <lable for="query">Any Queries...? : </lable>   
+                    <textarea id="query" name="query" rows="4" cols="50"></textarea><br><br><br>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </form><br><br>
+
+                <h1>Our Contact Details</h1>
+                <span>&#9993;</span>&nbsp;meow@gmail.com
+                <br><br>
+                <span>&#128383;</span>&nbsp;+91 12345 54321
+                <br><br>
+                <span>&#128049;</span>&nbsp;Meow Palace, Meow City.
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 My Website. All Rights Reserved By KK.</p>
+        </footer>
+    </body>
+</html>
